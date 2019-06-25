@@ -17,6 +17,14 @@
 npm i -D https://github.com/gbv/eslint-config-gbv
 ```
 
+If you don't have `eslint` installed in your project yet, you need to do this:
+```bash
+# For all projects:
+npm i -D eslint
+# Additionally for Vue.js projects:
+npm i -D eslint-plugin-vue
+```
+
 ## Usage
 Add the following to you ESLint config:
 ```json
