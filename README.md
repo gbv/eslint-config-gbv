@@ -37,6 +37,8 @@ Please enforce linting before a commit in all projects.
 
 ## Rules
 ### General
+Using `eslint:recommended` as a base, with the following overriding rules:
+
 - Indentation: Two spaces, indent `case` in switch statements.
 - Unix style line endings.
 - Double quotes.
@@ -45,6 +47,8 @@ Please enforce linting before a commit in all projects.
 - Allow console.
 
 ### Vue.js
+Using [`plugin:vue/recommended`](https://github.com/vuejs/eslint-plugin-vue) as a base, with the following overriding rules:
+
 - Allow v-html.
 - No closing bracket newline.
 - One space for closing brackets on self-closing tags.
