@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-gbv",
+  "version": "0.1.0",
+  "description": "Internal linting rules for GBV projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbv/eslint-config-gbv.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Stefan Peters <stefan.peters@gbv.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gbv/eslint-config-gbv/issues"
+  },
+  "homepage": "https://github.com/gbv/eslint-config-gbv#readme",
+  "peerDependencies": {
+    "eslint": ">= 5",
+    "eslint-plugin-vue": ">= 5"
+  }
+}
