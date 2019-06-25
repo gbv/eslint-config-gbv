@@ -20,6 +20,13 @@ npm i -D https://github.com/gbv/eslint-config-gbv
 Add the following to you ESLint config:
 ```json
 "extends": [
+  "gbv"
+]
+```
+
+For Vue.js projects, use the following instead:
+```json
+"extends": [
   "gbv",
   "gbv/vue"
 ]
