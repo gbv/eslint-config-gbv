@@ -33,6 +33,8 @@ For Vue.js projects, use the following instead:
 ]
 ```
 
+Please enforce linting before a commit in all projects.
+
 ## Rules
 ### General
 - Indentation: Two spaces, indent `case` in switch statements.
