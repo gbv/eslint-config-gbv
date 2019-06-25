@@ -7,6 +7,7 @@
 ## Table of Contents
 - [Install](#install)
 - [Usage](#usage)
+- [Rules](#rules)
 - [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#license)
@@ -31,6 +32,20 @@ For Vue.js projects, use the following instead:
   "gbv/vue"
 ]
 ```
+
+## Rules
+### General
+- Indentation: Two spaces, indent `case` in switch statements.
+- Unix style line endings.
+- Double quotes.
+- No semicolons.
+- Enforce comma dangle on multiline statements (see [this](https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8)).
+- Allow console.
+
+### Vue.js
+- Allow v-html.
+- No closing bracket newline.
+- One space for closing brackets on self-closing tags.
 
 ## Maintainers
 - [@stefandesu](https://github.com/stefandesu)
