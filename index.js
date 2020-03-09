@@ -2,6 +2,8 @@ module.exports = {
   "extends": [
     "eslint:recommended",
   ],
+  // Unignore dotfiles
+  "ignorePatterns": ["!.*"],
   "rules": {
     // console.log, console.warn, and console.error can be used.
     "no-console": "off",
