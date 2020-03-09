@@ -25,6 +25,10 @@ module.exports = {
       "error",
       "double",
     ],
+    "quote-props": [
+      "error",
+      "as-needed",
+    ],
     // Disallow semicolons.
     "semi": [
       "error",

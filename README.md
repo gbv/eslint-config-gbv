@@ -50,6 +50,7 @@ Using `eslint:recommended` as a base, with the following overriding rules:
 - Indentation: Two spaces, indent `case` in switch statements.
 - Unix style line endings.
 - Double quotes.
+- Disallow quotes around object literal property names if they are not needed.
 - No semicolons.
 - Enforce comma dangle on multiline statements (see [this](https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8)).
 - Allow console.
