@@ -1,18 +1,18 @@
 module.exports = {
-  "extends": [
+  extends: [
     "eslint:recommended",
   ],
   // Unignore dotfiles
-  "ignorePatterns": ["!.*"],
-  "rules": {
+  ignorePatterns: ["!.*"],
+  rules: {
     // console.log, console.warn, and console.error can be used.
     "no-console": "off",
     // Always use two spaces, and indent switch-case statements.
-    "indent": [
+    indent: [
       "error",
       2,
       {
-        "SwitchCase": 1,
+        SwitchCase: 1,
       },
     ],
     // Use Unix line endings (\n).
@@ -21,7 +21,7 @@ module.exports = {
       "unix",
     ],
     // Use double quotes.
-    "quotes": [
+    quotes: [
       "error",
       "double",
     ],
@@ -30,7 +30,7 @@ module.exports = {
       "as-needed",
     ],
     // Disallow semicolons.
-    "semi": [
+    semi: [
       "error",
       "never",
     ],
