@@ -33,11 +33,11 @@ Add the following to you ESLint config:
 ]
 ```
 
-For Vue.js projects, use the following instead:
+For Vue.js projects, use the following instead (replace `2` with `3` for Vue 3 projects):
 ```json
 "extends": [
   "gbv",
-  "gbv/vue"
+  "gbv/vue/2"
 ]
 ```
 
@@ -56,7 +56,7 @@ Using `eslint:recommended` as a base, with the following overriding rules:
 - Allow console.
 
 ### Vue.js
-Using [`plugin:vue/recommended`](https://github.com/vuejs/eslint-plugin-vue) as a base, with the following overriding rules:
+Using [`plugin:vue/recommended`/`plugin:vue/vue3-recommended`](https://github.com/vuejs/eslint-plugin-vue) as a base, with the following overriding rules:
 
 - Allow v-html.
 - No closing bracket newline.
