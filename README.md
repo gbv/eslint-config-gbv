@@ -4,10 +4,12 @@
 
 > Internal linting rules for GBV projects.
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 - [Install](#install)
 - [Usage](#usage)
 - [Rules](#rules)
+  - [General](#general)
+  - [Vue.js](#vuejs)
 - [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#license)
