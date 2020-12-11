@@ -16,12 +16,12 @@
 
 ## Install
 ```bash
-npm i -D https://github.com/gbv/eslint-config-gbv
+npm i -D eslint-config-gbv
 ```
 
 If you don't have `eslint` installed in your project yet, you need to do this:
 ```bash
-# For all projects:
+# For all projects (works with v6 and v7):
 npm i -D eslint
 # Additionally for Vue.js projects:
 npm i -D eslint-plugin-vue
@@ -74,4 +74,4 @@ PRs are welcome, but we only use this for our own project and it shouldn't be of
 If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
-MIT ©2019 Verbundzentrale des GBV (VZG)
+MIT @2020 Verbundzentrale des GBV (VZG)
