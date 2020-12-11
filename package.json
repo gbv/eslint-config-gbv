@@ -7,7 +7,11 @@
     "test": "npm run lint",
     "lint": "eslint .*.js *.js vue/*.js",
     "fix": "eslint --fix .*.js *.js vue/*.js",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "git pull && npm test && npm version $SEMVER && git push --follow-tags",
+    "release:patch": "SEMVER=patch npm run release",
+    "release:minor": "SEMVER=minor npm run release",
+    "release:major": "SEMVER=major npm run release"
   },
   "lint-staged": {
     "**/*.js": [
