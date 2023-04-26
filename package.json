@@ -40,9 +40,9 @@
     "eslint-plugin-vue": ">= 7"
   },
   "devDependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.39.0",
     "eslint-config-gbv": "file:.",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^13.2.1",
     "pre-commit": "^1.2.2"
   }
 }
