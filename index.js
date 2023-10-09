@@ -39,5 +39,13 @@ module.exports = {
       "error",
       "always-multiline",
     ],
+    // Always require curly braces for all control statements (https://eslint.org/docs/latest/rules/curly)
+    curly: "error",
+    // No single-line braces (https://eslint.org/docs/latest/rules/brace-style)
+    "brace-style": [
+      "error",
+      "1tbs",
+      { allowSingleLine: false },
+    ],
   },
 }

@@ -56,6 +56,9 @@ Using `eslint:recommended` as a base, with the following overriding rules:
 - No semicolons.
 - Enforce comma dangle on multiline statements (see [this](https://medium.com/@nikgraf/why-you-should-enforce-dangling-commas-for-multiline-statements-d034c98e36f8)).
 - Allow console.
+- Control statement brace style:
+  - Enforce curly braces for all control statements.
+  - Disallow single-line curly braces.
 
 ### Vue.js
 Using [`plugin:vue/recommended`/`plugin:vue/vue3-recommended`](https://github.com/vuejs/eslint-plugin-vue) as a base, with the following overriding rules:
