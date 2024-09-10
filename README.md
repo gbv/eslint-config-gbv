@@ -1,8 +1,9 @@
 # eslint-config-gbv
 
+[![NPM package name](https://img.shields.io/badge/npm-eslint--config--gbv-blue.svg)](https://www.npmjs.com/package/eslint-config-gbv)
 [![License](https://img.shields.io/github/license/gbv/eslint-config-gbv.svg)](https://github.com/gbv/eslint-config-gbv/blob/master/LICENSE)
 
-> Internal linting rules for GBV projects.
+> Internal linting rules for GBV/coli-conc projects.
 
 ## Table of Contents <!-- omit in toc -->
 - [Install](#install)
@@ -19,35 +20,46 @@
 npm i -D eslint-config-gbv
 ```
 
-If you don't have `eslint` installed in your project yet, you need to do this:
+eslint-config-gbv v2.x only works with ESLint v9.x and the new [flat config format](https://eslint.org/docs/latest/use/configure/migration-guide). It is recommended to use the same minor version of ESLint in your project as is used in this project (as minor updates in ESLint can include rule changes). Current, this is ESLint v9.10:
+
 ```bash
-# For all projects (works with v6 and v7):
-npm i -D eslint
-# Additionally for Vue.js projects:
-npm i -D eslint-plugin-vue
+npm i -D eslint@"~9.10"
 ```
+
+For older versions of ESLint (using the previous config format), use [eslint-config-gbv v1.1.0](https://github.com/gbv/eslint-config-gbv/tree/v1.1.0).
 
 ## Usage
-Add the following to you ESLint config:
-```json
-"extends": [
-  "gbv"
+Create a `eslint.config.js` file with the following content:
+
+```js
+import gbv from "eslint-config-gbv"
+export default gbv
+```
+
+If you need to include your own rules, or to add Vue.js-specific rules, do this:
+
+```js
+import gbv from "eslint-config-gbv"
+import vue from "eslint-config-gbv/vue"
+// import vue from "eslint-config-gbv/vue2" // use this for Vue.js 2
+
+export default [
+  ...gbv,
+  ...vue,
+  // Your own rules or other configs/plugins here:
+  {
+    // ...
+  },
 ]
 ```
 
-For Vue.js projects, use the following instead (replace `2` with `3` for Vue 3 projects):
-```json
-"extends": [
-  "gbv",
-  "gbv/vue/2"
-]
-```
+See also: https://eslint.org/docs/latest/use/configure/combine-configs
 
 Please enforce linting before a commit in all projects.
 
 ## Rules
 ### General
-Using `eslint:recommended` as a base, with the following overriding rules:
+Using [ESLint's `recommended` rules](https://www.npmjs.com/package/@eslint/js) as a base, with the following overriding rules:
 
 - Indentation: Two spaces, indent `case` in switch statements.
 - Unix style line endings.
@@ -59,13 +71,16 @@ Using `eslint:recommended` as a base, with the following overriding rules:
 - Control statement brace style:
   - Enforce curly braces for all control statements.
   - Disallow single-line curly braces.
+- Allow caught error arguments and argument variables starting with `_` to be unused.
+- Require `let` or `const` instead of `var`.
 
 ### Vue.js
-Using [`plugin:vue/recommended`/`plugin:vue/vue3-recommended`](https://github.com/vuejs/eslint-plugin-vue) as a base, with the following overriding rules:
+Using [Vue.js's `flat/recommended`/`flat/vue2-recommended`](https://eslint.vuejs.org/) as a base, with the following overriding rules:
 
 - Allow v-html.
 - No closing bracket newline.
 - One space for closing brackets on self-closing tags.
+- Only warn (instead of error) for single word component names.
 
 ## Maintainers
 - [@stefandesu](https://github.com/stefandesu)
@@ -77,4 +92,4 @@ PRs are welcome, but we only use this for our own project and it shouldn't be of
 If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
-MIT @2020 Verbundzentrale des GBV (VZG)
+MIT @2024 Verbundzentrale des GBV (VZG)
