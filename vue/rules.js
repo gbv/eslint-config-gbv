@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // We need v-html at some places.
   "vue/no-v-html": "off",
   // Closing bracket formatting.

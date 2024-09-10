@@ -2,11 +2,20 @@
   "name": "eslint-config-gbv",
   "version": "1.1.0",
   "description": "Internal linting rules for GBV projects.",
-  "main": "index.js",
+  "type": "module",
+  "files": [
+    "eslint.config.js",
+    "vue"
+  ],
+  "exports": {
+    ".": "./eslint.config.js",
+    "./vue": "./vue/3.js",
+    "./vue2": "./vue/2.js"
+  },
   "scripts": {
     "test": "npm run lint",
-    "lint": "eslint .*.js *.js vue/*.js",
-    "fix": "eslint --fix .*.js *.js vue/*.js",
+    "lint": "eslint",
+    "fix": "eslint --fix",
     "lint-staged": "lint-staged",
     "release": "git pull && npm test && npm version $SEMVER && git push --follow-tags",
     "release:patch": "SEMVER=patch npm run release",
@@ -35,14 +44,15 @@
     "url": "https://github.com/gbv/eslint-config-gbv/issues"
   },
   "homepage": "https://github.com/gbv/eslint-config-gbv#readme",
-  "peerDependencies": {
-    "eslint": ">= 6",
-    "eslint-plugin-vue": ">= 7"
+  "dependencies": {
+    "@eslint/js": "~9.10.0",
+    "eslint": "~9.10.0",
+    "eslint-plugin-vue": "~9.28.0",
+    "globals": "^15.9.0"
   },
   "devDependencies": {
-    "eslint": "^8.39.0",
     "eslint-config-gbv": "file:.",
-    "lint-staged": "^13.2.1",
+    "lint-staged": "^15.2.10",
     "pre-commit": "^1.2.2"
   }
 }
