@@ -17,4 +17,6 @@ export default {
       selfClosingTag: "always",
     },
   ],
+  // Allow single word component names, but warn about it.
+  "vue/multi-word-component-names": "warn",
 }

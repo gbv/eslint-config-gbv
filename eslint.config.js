@@ -57,6 +57,16 @@ export default [
         "1tbs",
         { allowSingleLine: false },
       ],
+      // Allows caught errors and args starting with underscore to be unused.
+      "no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          caughtErrors: "none",
+        },
+      ],
+      // Require `let` or `const` instead of `var`.
+      "no-var": "error",
     },
   },
 ]
