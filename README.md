@@ -8,6 +8,7 @@
 ## Table of Contents <!-- omit in toc -->
 - [Install](#install)
 - [Usage](#usage)
+- [Enforce Linting](#enforce-linting)
 - [Rules](#rules)
   - [General](#general)
   - [Vue.js](#vuejs)
@@ -56,6 +57,65 @@ export default [
 See also: https://eslint.org/docs/latest/use/configure/combine-configs
 
 Please enforce linting before a commit in all projects.
+
+## Enforce Linting
+
+You can enforce linting before a commit on all staged files by utilizing the packages [pre-commit](https://www.npmjs.com/package/pre-commit) and [lint-staged](https://www.npmjs.com/package/lint-staged):
+
+```sh
+npm i -D pre-commit lint-staged
+```
+
+Then add the following to `package.json`:
+
+```json
+{
+  "scripts": {
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "pre-commit": "lint-staged"
+}
+```
+
+Make sure to add other file extensions as necessary.
+
+Additionally, you can add linting to your Mocha tests as well. Create a file `test/eslint.js` (or `test/eslint.mjs` in CommonJS projects) with the following content:
+
+```js
+import assert from "node:assert"
+import { loadESLint } from "eslint"
+
+const DefaultESLint = await loadESLint()
+const eslint = new DefaultESLint()
+const results = await eslint.lintFiles([
+  "**/*.js",
+  // Add more file patterns here if necessary
+])
+
+describe("ESLint Errors", () => {
+
+  results.forEach(result => {
+    it(result.filePath, (done) => {
+      assert(
+        result.errorCount === 0,
+        "\n" + result.messages.map(m => `\t\t${m.line}:${m.column}\terror\t${m.message}\t${m.ruleId}`).join("\n"),
+      )
+      done()
+    })
+  })
+
+})
+```
+
+Each file will be its own test case and errors will be appropriately reported.
 
 ## Rules
 ### General
