@@ -6,12 +6,15 @@ import globals from "globals"
 
 export default [
   js.configs.recommended,
+  // Global ignore needs to be a separate entry
   {
     ignores: [
       "releases",
       "dist",
       "_site",
     ],
+  },
+  {
     languageOptions: {
       globals: {
         ...globals.browser,
