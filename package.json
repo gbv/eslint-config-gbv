@@ -45,10 +45,10 @@
   },
   "homepage": "https://github.com/gbv/eslint-config-gbv#readme",
   "dependencies": {
-    "@eslint/js": "~9.11",
-    "eslint": "~9.11",
+    "@eslint/js": "~9.12",
+    "eslint": "~9.12",
     "eslint-plugin-vue": "~9.28.0",
-    "globals": "^15.9.0"
+    "globals": "^15.10.0"
   },
   "devDependencies": {
     "eslint-config-gbv": "file:.",
