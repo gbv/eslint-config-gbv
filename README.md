@@ -18,13 +18,13 @@
 
 ## Install
 ```bash
-npm i -D eslint-config-gbv@"~2.2"
+npm i -D eslint-config-gbv@"~2.3"
 ```
 
-eslint-config-gbv v2.x only works with ESLint v9.x and the new [flat config format](https://eslint.org/docs/latest/use/configure/migration-guide). It is recommended to use the same minor version of ESLint in your project as is used in this project (as minor updates in ESLint can include rule changes). Current, this is ESLint v9.12:
+eslint-config-gbv v2.x only works with ESLint v9.x and the new [flat config format](https://eslint.org/docs/latest/use/configure/migration-guide). It is recommended to use the same minor version of ESLint in your project as is used in this project (as minor updates in ESLint can include rule changes). Current, this is ESLint v9.13:
 
 ```bash
-npm i -D eslint@"~9.12"
+npm i -D eslint@"~9.13"
 ```
 
 For older versions of ESLint (using the previous config format), use [eslint-config-gbv v1.1.0](https://github.com/gbv/eslint-config-gbv/tree/v1.1.0).

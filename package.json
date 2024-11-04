@@ -45,9 +45,9 @@
   },
   "homepage": "https://github.com/gbv/eslint-config-gbv#readme",
   "dependencies": {
-    "@eslint/js": "~9.12",
-    "eslint": "~9.12",
-    "eslint-plugin-vue": "~9.28.0",
+    "@eslint/js": "~9.13",
+    "eslint": "~9.13",
+    "eslint-plugin-vue": "~9.30.0",
     "globals": "^15.10.0"
   },
   "devDependencies": {
