@@ -1,7 +1,7 @@
 # eslint-config-gbv
 
 [![NPM package name](https://img.shields.io/badge/npm-eslint--config--gbv-blue.svg)](https://www.npmjs.com/package/eslint-config-gbv)
-[![License](https://img.shields.io/github/license/gbv/eslint-config-gbv.svg)](https://github.com/gbv/eslint-config-gbv/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/gbv/eslint-config-gbv.svg)](https://github.com/gbv/eslint-config-gbv/blob/main/LICENSE)
 
 > Internal linting rules for GBV/coli-conc projects.
 
@@ -143,7 +143,6 @@ Using [Vue.js's `flat/recommended`/`flat/vue2-recommended`](https://eslint.vuejs
 - Only warn (instead of error) for single word component names.
 
 ## Maintainers
-- [@stefandesu](https://github.com/stefandesu)
 - [@nichtich](https://github.com/nichtich)
 
 ## Contribute
