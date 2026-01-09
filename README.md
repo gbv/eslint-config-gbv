@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/gbv/eslint-config-gbv.svg)](https://github.com/gbv/eslint-config-gbv/blob/main/LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 
-> Internal linting rules for GBV/coli-conc projects.
+> Linting rules for NodeJS projects at GBV
 
 ## Table of Contents <!-- omit in toc -->
 - [Install](#install)
@@ -16,6 +16,8 @@
 - [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#license)
+
+*See [list of projects using this linting rules](https://github.com/search?q=eslint-config-gbv+path%3Apackage.json++NOT+is%3Aarchived&type=code)*
 
 ## Install
 ```bash
