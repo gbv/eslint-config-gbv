@@ -2,6 +2,7 @@
 
 [![NPM package name](https://img.shields.io/badge/npm-eslint--config--gbv-blue.svg)](https://www.npmjs.com/package/eslint-config-gbv)
 [![License](https://img.shields.io/github/license/gbv/eslint-config-gbv.svg)](https://github.com/gbv/eslint-config-gbv/blob/main/LICENSE)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 
 > Internal linting rules for GBV/coli-conc projects.
 
@@ -18,13 +19,13 @@
 
 ## Install
 ```bash
-npm i -D eslint-config-gbv@"~2.6"
+npm i -D eslint-config-gbv@"~2.7"
 ```
 
-eslint-config-gbv v2.x only works with ESLint v9.x and the new [flat config format](https://eslint.org/docs/latest/use/configure/migration-guide). It is recommended to use the same minor version of ESLint in your project as is used in this project (as minor updates in ESLint can include rule changes). Current, this is ESLint v9.16:
+eslint-config-gbv v2.x only works with ESLint v9.x and the new [flat config format](https://eslint.org/docs/latest/use/configure/migration-guide). It is recommended to use the same minor version of ESLint in your project as is used in this project (as minor updates in ESLint can include rule changes). Current, this is ESLint v9.39:
 
 ```bash
-npm i -D eslint@"~9.16"
+npm i -D eslint@"~9.39"
 ```
 
 For older versions of ESLint (using the previous config format), use [eslint-config-gbv v1.1.0](https://github.com/gbv/eslint-config-gbv/tree/v1.1.0).
